@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sample_multiple_view_list" model="ir.ui.view">
+        <field name="name">Sample multiple</field>
+        <field name="model">sample.multiple</field>
+        <field name="arch" type="xml">
+            <list string="">
+                <field name="code" />
+                <field name="name" />
+                <field name="category_id" />
+                <field name="description"/>
+                <field name="note" />
+            </list>
+        </field>
+    </record>
+
+    <record id="sample_multiple_view_form" model="ir.ui.view">
+        <field name="name">Sample multiple</field>
+        <field name="model">sample.multiple</field>
+        <field name="arch" type="xml">
+            <form string="Sample multiple">
+                <header>
+                    <button name="action_line_count" string="Line Count" type="object" class="btn-info" />
+                </header>
+                <sheet name="item-form">
+                    <field name="company_id" invisible="1" />
+                    <div class="oe_title">
+                        <label for="code" string="Code" />
+                        <h1>
+                            <div class="d-flex">
+                                <field class="text-break" name="code"
+                                       options="{'line_breaks': False}" widget="text"
+                                />
+                            </div>
+                        </h1>
+                    </div>
+                    <group name="first">
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="category_id"/>
+                        </group>
+                    </group>
+                    <group name="second" string="General">
+                        <field name="description"/>
+                        <field name="note"/>
+                    </group>
+                    <notebook>
+                        <page name="lines" string="Lines">
+                            <field name="line_ids">
+                                <list editable="bottom">
+                                    <field name="code"/>
+                                    <field name="name"/>
+                                    <field name="description"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sample_multiple_view" model="ir.actions.act_window">
+        <field name="name">Sample Multiple</field>
+        <field name="res_model">sample.multiple</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

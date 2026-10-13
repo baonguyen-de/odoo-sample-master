@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sample_single_1" model="sample.single">
+        <field name="company_id" ref="base.main_company" />
+        <field name="code">SS-001</field>
+        <field name="name">Sample Single 1</field>
+        <field name="category_id" ref="ps_accounting_sample.category_1" />
+        <field name="description">Demo record for sample.single</field>
+        <field name="note">Created as demo data</field>
+    </record>
+
+    <record id="sample_single_2" model="sample.single">
+        <field name="company_id" ref="base.main_company" />
+        <field name="code">SS-002</field>
+        <field name="name">Sample Single 2</field>
+        <field name="category_id" ref="ps_accounting_sample.category_2" />
+        <field name="description">Second demo record for sample.single</field>
+        <field name="note">Created as demo data</field>
+    </record>
+
+    <record id="sample_single_3" model="sample.single">
+        <field name="company_id" ref="base.main_company" />
+        <field name="code">SS-003</field>
+        <field name="name">Sample Single 3</field>
+        <field name="category_id" ref="ps_accounting_sample.category_1" />
+        <field name="description">Third demo record for sample.single</field>
+        <field name="note">Created as demo data</field>
+    </record>
+</odoo>
+

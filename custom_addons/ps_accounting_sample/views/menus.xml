@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="root_menu" name="Sample" sequence="0"/>
+            <menuitem id="sample_single_sub_menu" name="Sample Single" parent="root_menu" sequence="10" action="action_sample_single_view"/>
+            <menuitem id="sample_multiple_sub_menu" name="Sample Multiple" parent="root_menu" sequence="20" action="action_sample_multiple_view"/>
+            <menuitem id="config_sub_menu" name="Config" parent="root_menu" sequence="100"/>
+                <menuitem id="category_sub_menu" name="Category" parent="config_sub_menu" sequence="10" action="action_category_view"/>
+    </data>
+</odoo>

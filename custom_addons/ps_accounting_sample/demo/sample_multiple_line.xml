@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sample_multiple_line_1" model="sample.multiple.line">
+        <field name="company_id" ref="base.main_company" />
+        <field name="sample_multiple_id" ref="ps_accounting_sample.sample_multiple_1" />
+        <field name="code">SM-001</field>
+        <field name="name">Sample Multiple 1 Line A</field>
+        <field name="description">Line matched to sample.multiple code</field>
+    </record>
+
+    <record id="sample_multiple_line_2" model="sample.multiple.line">
+        <field name="company_id" ref="base.main_company" />
+        <field name="sample_multiple_id" ref="ps_accounting_sample.sample_multiple_1" />
+        <field name="code">SML-002</field>
+        <field name="name">Sample Multiple 1 Line B</field>
+        <field name="description">Additional demo line</field>
+    </record>
+
+    <record id="sample_multiple_line_3" model="sample.multiple.line">
+        <field name="company_id" ref="base.main_company" />
+        <field name="sample_multiple_id" ref="ps_accounting_sample.sample_multiple_2" />
+        <field name="code">SM-002</field>
+        <field name="name">Sample Multiple 2 Line A</field>
+        <field name="description">Line matched to sample.multiple code</field>
+    </record>
+
+    <record id="sample_multiple_line_4" model="sample.multiple.line">
+        <field name="company_id" ref="base.main_company" />
+        <field name="sample_multiple_id" ref="ps_accounting_sample.sample_multiple_2" />
+        <field name="code">SML-004</field>
+        <field name="name">Sample Multiple 2 Line B</field>
+        <field name="description">Additional demo line</field>
+    </record>
+</odoo>
+

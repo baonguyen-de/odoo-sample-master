@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ps_category,access_ps_category,model_category,base.group_user,1,0,0,0
+access_ps_category_admin,access_ps_category_admin,model_category,base.group_system,1,1,1,1
+access_ps_sample_single,access_ps_sample_single,model_sample_single,base.group_user,1,0,0,0
+access_ps_sample_single_admin,access_ps_sample_single_admin,model_sample_single,base.group_system,1,1,1,1
+access_ps_sample_multiple,access_ps_sample_multiple,model_sample_multiple,base.group_user,1,0,0,0
+access_ps_sample_multiple_admin,access_ps_sample_multiple_admin,model_sample_multiple,base.group_system,1,1,1,1
+access_ps_sample_multiple_line,access_ps_sample_multiple_line,model_sample_multiple_line,base.group_user,1,0,0,0
+access_ps_sample_multiple_line_admin,access_ps_sample_multiple_line_admin,model_sample_multiple_line,base.group_system,1,1,1,1
